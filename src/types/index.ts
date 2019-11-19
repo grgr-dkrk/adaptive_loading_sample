@@ -1,0 +1,1 @@
+export type ConnectionEffectiveType = undefined | '2g' | '3g' | '4g' | '5g';

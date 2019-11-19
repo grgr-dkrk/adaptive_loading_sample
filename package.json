@@ -1,14 +1,14 @@
 {
-  "name": "suburi-template",
+  "name": "adaptive-loading-sample",
   "version": "1.0.0",
-  "description": "素振り、OSSの検証とか",
+  "description": "Sample for Adaptive Loading",
   "main": "index.js",
   "author": "grgr-dkrk",
   "license": "MIT",
   "scripts": {
-    "node": "yarn ts-node",
     "dev": "parcel ./src/index.html",
-    "dev-server": "yarn run ts-node-dev --project ./tsconfig-server.json ./server/index.tsx"
+    "build": "parcel build ./src/index.html -d adaptiveLoadingSample",
+    "now": "cd ./adaptiveLoadingSample && now && cd ../"
   },
   "devDependencies": {
     "@types/express": "^4.17.1",
